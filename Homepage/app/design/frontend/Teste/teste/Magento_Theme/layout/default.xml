@@ -1,0 +1,22 @@
+<referenceContainer name="content">
+    <block class="Magento\Framework\View\Element\Template" name="full.width.banner" template="SeuTema_seu-tema::full_width_banner.phtml"/>
+</referenceContainer>
+<referenceContainer name="content">
+    <block class="Magento\Framework\View\Element\Text" name="how.it.works" template="SeuTema_seu-tema::how_it_works.phtml"/>
+</referenceContainer>
+<referenceContainer name="content">
+    <block class="Magento\Catalog\Block\Product\Widget\NewWidget" name="category.products.carousel" template="SeuTema_seu-tema::category_products.phtml">
+        <arguments>
+            <argument name="category_id" xsi:type="number">SuaCategoriaID</argument>
+            <argument name="products_count" xsi:type="number">8</argument>
+            <argument name="template" xsi:type="string">widget/new/content/new_grid.phtml</argument>
+        </arguments>
+    </block>
+</referenceContainer>
+<referenceContainer name="content">
+    <block class="Magento\Cms\Block\Widget\Block" name="banner.grid" template="SeuTema_seu-tema::banner_grid.phtml">
+        <arguments>
+            <argument name="widget_id" xsi:type="string">seu_widget_id</argument>
+        </arguments>
+    </block>
+</referenceContainer>

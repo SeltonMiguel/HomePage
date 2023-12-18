@@ -1,0 +1,26 @@
+<div class="full-width-banner">
+    <div class="slider-item">
+        <img src="Homepage\app\design\frontend\Teste\teste\Magento_Theme\web\images\387846551_1001879481043827_3957837484150233468_n.jpg" alt="Banner 1">
+    </div>
+    <div class="slider-item">
+        <img src="Homepage\app\design\frontend\Teste\teste\Magento_Theme\web\images\411083451_899750814840636_6614851135744234800_n.jpg" alt="Banner 2">
+    </div>
+
+    <button class="prev">Anterior</button>
+    <button class="next">Próximo</button>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $('.full-width-banner').slick({
+            autoplay: true,
+            autoplaySpeed: 5000, 
+            dots: true,
+            prevArrow: $('.prev'),
+            nextArrow: $('.next')
+        });
+    });
+</script>
